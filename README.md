@@ -1,54 +1,6 @@
 # EpiExtract4GARD
-Trained like 
-
-To train an NER model with BioBERT-v1.1 (base), run the command below.
-Before training, please run `./preprocess.sh` to preprocess the datasets downloaded in `biobert-pytorch` (see [here](https://github.com/jhyuklee/biobert-pytorch)).
-
-## Sample Training Commands
-```bash
-export SAVE_DIR=./outputLG5
-export DATA_DIR=../datasets
-export MAX_LENGTH=192
-export SAVE_STEPS=1500
-export SEED=1
-export ENTITY=Large_DatasetV2
-export NUM_EPOCHS=30
-export LEARNING_RATE=5e-5
-export WEIGHT_DECAY=0.01
-export BATCH_SIZE=16
-export EPSILON=1e-8
-
-python3 run_ner.py \
-    --data_dir ${DATA_DIR}/${ENTITY}/ \
-    --labels ${DATA_DIR}/${ENTITY}/labels.txt \
-    --model_name_or_path dmis-lab/biobert-base-cased-v1.1 \
-    --learning_rate ${LEARNING_RATE} \
-    --output_dir ${SAVE_DIR} \
-    --weight_decay ${WEIGHT_DECAY} \
-    --adam_epsilon ${EPSILON} \
-    --max_seq_length ${MAX_LENGTH} \
-    --num_train_epochs ${NUM_EPOCHS} \
-    --per_device_train_batch_size ${BATCH_SIZE} \
-    --save_steps ${SAVE_STEPS} \
-    --seed ${SEED} \
-    --do_train \
-    --do_eval \
-    --do_predict \
-    --overwrite_output_dir
-
-export SAVE_DIR=./outputCSTM5
-export DATA_DIR=../datasets
-export MAX_LENGTH=192
-export SAVE_STEPS=1500
-export SEED=1
-export ENTITY=EpiCustomV2
-export NUM_EPOCHS=30
-export LEARNING_RATE=5e-5
-export WEIGHT_DECAY=0.01
-export BATCH_SIZE=16
-export EPSILON=1e-8
-```
-
+This repository was a second back-up of my creation: EpiExtract4GARD for the National Center for Advancing Translational Sciences. This also serves as a placeholder repository so you can 
+<!---
 ## Evaluation Results
 
 | Test #      | Dataset  | epochs | learning rate | weight decay | batch size | adam epsilon | loss     | precision | recall   | F1       |
@@ -85,5 +37,5 @@ export EPSILON=1e-8
 | outputLG5   | LargeV2  | 30     | 0.00005       | 0.01         | 16         | 1E-08        | 0.055439 | 0.883756  | 0.881129 | 0.88244  |
 | outputCSTM5 | CustomV2 | 30     | 0.00005       | 0.01         | 16         | 1E-08        | 0.054413 | 0.891239  | 0.876672 | 0.883895 |
 
-## Contact
-For help or issues using BioBERT-PyTorch, please create an issue and tag [@minstar](https://github.com/minstar).
+
+-->
