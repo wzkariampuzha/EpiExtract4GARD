@@ -1,5 +1,5 @@
 # EpiExtract4GARD
-This repository was a second back-up of my creation: [EpiExtract4GARD for the National Center for Advancing Translational Sciences (NCATS)](https://github.com/ncats/epi4GARD/tree/master/EpiExtract4GARD#epiextract4gard) at the National Institutes of Health (NIH). This also serves as a placeholder repository so you can see my work there. 
+This repository was a second back-up of my creation: [EpiExtract4GARD for the National Center for Advancing Translational Sciences (NCATS)](https://github.com/ncats/epi4GARD/tree/master/EpiExtract4GARD#epiextract4gard) at the National Institutes of Health (NIH). This also serves as a placeholder repository so you can see the updated version of my work there.
 <!---
 ## Evaluation Results
 
